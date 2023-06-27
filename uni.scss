@@ -1,1 +1,14 @@
 @import '@/uni_modules/uni-scss/variables.scss';
+
+.theme-default {
+  --bg-color: rgba(0,0,255,0.3);
+  --text-color: #000;
+}
+
+.theme-dark {
+  --bg-color: black;
+  --text-color: #fff;
+}
+
+$bg-color: var(--bg-color);
+$text-color: var(--text-color);

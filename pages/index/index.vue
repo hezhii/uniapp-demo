@@ -1,29 +1,38 @@
 <template>
-	<view class="container">
-		
-		<view class="intro">本项目已包含uni ui组件，无需import和注册，可直接使用。在代码区键入字母u，即可通过代码助手列出所有可用组件。光标置于组件名称处按F1，即可查看组件文档。</view>
-		<text class="intro">详见：</text>
-		<uni-link :href="href" :text="href"></uni-link>
-	</view>
+  <view :class="['container', theme === 'default' ? 'theme-default' : 'theme-dark']">
+    <view class="show-theme-container"><text>展示主题</text></view>
+    <button type="primary" @click="toggleTheme">切换主题</button>
+  </view>
 </template>
 
-<script>
-	export default {
-		data() {
-			return {
-				href: 'https://uniapp.dcloud.io/component/README?id=uniui'
-			}
-		},
-		methods: {
+<script setup>
+import { ref } from 'vue';
 
-		}
-	}
+const theme = ref('default');
+
+const toggleTheme = () => {
+  theme.value = theme.value === 'default' ? 'dark' : 'default';
+};
 </script>
 
-<style>
-	.container {
-		padding: 20px;
-		font-size: 14px;
-		line-height: 24px;
-	}
+<style scoped lang="scss">
+.container {
+  height: 100%;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.show-theme-container {
+  height: 40px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-color;
+
+  text {
+    color: $text-color;
+  }
+}
 </style>
