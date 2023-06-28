@@ -1,7 +1,8 @@
 node_modules/
 dist/**
 .project
-unpackage/
+unpackage/cache
+unpackage/dist
 .DS_Store
 wxcomponents/**/*.vue
 wxcomponents/**/*.css
