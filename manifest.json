@@ -2,8 +2,8 @@
     "name" : "uniapp-demo",
     "appid" : "__UNI__10177AB",
     "description" : "",
-    "versionName" : "1.0.2",
-    "versionCode" : 103,
+    "versionName" : "1.0.3",
+    "versionCode" : 104,
     "transformPx" : false,
     "app-plus" : {
         /* 5+App特有相关 */
@@ -218,6 +218,20 @@
                             "value" : ""
                         }
                     }
+                }
+            },
+            "TencentCloud-TUICallKit" : {
+                "__plugin_info__" : {
+                    "name" : "【官方】腾讯云音视频通话插件TencentCloud-TUICallKit",
+                    "description" : "TUICallKit 是腾讯云官方推出的音视频通话插件，支持 1v1 通话和群组通话，并提供“类微信\"的 UI 交互，开发者仅需三个 API 就可实现。",
+                    "platforms" : "Android,iOS",
+                    "url" : "https://ext.dcloud.net.cn/plugin?id=9035",
+                    "android_package_name" : "cn.com.newbest.newwork",
+                    "ios_bundle_id" : "cn.com.newbest.newwork",
+                    "isCloud" : true,
+                    "bought" : 1,
+                    "pid" : "9035",
+                    "parameters" : {}
                 }
             }
         }

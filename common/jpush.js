@@ -1,5 +1,5 @@
 // 引入极光推送插件
-var jpushModule = uni.requireNativePlugin("JG-JPush");
+const jpushModule = uni.requireNativePlugin("JG-JPush");
 
 export default () => {
   console.log("init jpush")
