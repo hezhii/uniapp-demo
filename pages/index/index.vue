@@ -4,6 +4,7 @@
     <button type="primary" @click="toggleTheme" class="button">切换主题</button>
     <button type="primary" @click="trtcLogin" class="button">TRTC 登录</button>
     <button type="primary" @click="trtcCall" class="button">呼叫</button>
+    <button type="primary" @click="navigateToPage2" class="button">跳转页面</button>
   </view>
 </template>
 
@@ -36,6 +37,12 @@ const trtcCall = () => {
     } else {
       console.log(`call failed, error message = ${res.msg}`);
     }
+  });
+};
+
+const navigateToPage2 = () => {
+  uni.navigateTo({
+    url: '/pages/page2/page2?id=1&name=uniapp'
   });
 };
 </script>
